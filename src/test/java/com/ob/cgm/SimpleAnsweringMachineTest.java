@@ -131,6 +131,6 @@ public class SimpleAnsweringMachineTest {
     public void main() {
         systemInMock.provideLines(QUIT_STRING);
         SimpleAnsweringMachine.main(new String[0]);
-        assertEquals("S:<question>? \"<answer1>\" \"<answer2>\" \"<answerX>\"\nA:<question>?\nQ:quit\n>",systemOutRule.getLogWithNormalizedLineSeparator());
+        assertEquals("'S' store a question <question>? \"<answer1>\" \"<answer2>\" \"<answerX>\"\n'A' ask a question <question>?\n'Q' quit\n>",systemOutRule.getLogWithNormalizedLineSeparator());
     }
 }

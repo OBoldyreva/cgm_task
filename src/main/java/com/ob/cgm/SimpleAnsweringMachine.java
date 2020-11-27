@@ -77,9 +77,9 @@ public class SimpleAnsweringMachine {
         }
     }
     public static void main(String[] args) {
-        System.out.println("S:<question>? \"<answer1>\" \"<answer2>\" \"<answerX>\"");
-        System.out.println("A:<question>?");
-        System.out.println("Q:quit");
+        System.out.println("'S' store a question <question>? \"<answer1>\" \"<answer2>\" \"<answerX>\"");
+        System.out.println("'A' ask a question <question>?");
+        System.out.println("'Q' quit");
         SimpleAnsweringMachine answeringMachine= new SimpleAnsweringMachine();
         answeringMachine.answerQuestions();
 //        System.exit(0);
